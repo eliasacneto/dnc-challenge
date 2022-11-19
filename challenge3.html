@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HBO-02</title>
+    <title>HBO-03</title>
     <link href="./assets/style.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,36 +13,45 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/1a827209e1.js" crossorigin="anonymous"></script>
   </head>
+  
 
   <body>
-    <div>
-      <img src="./assets/images/hbo-white.png" alt="logo-hbo" width="150px" />
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Assinar</a></li>
-      </ul>
-    </nav>
-    <h1><strong>Entrar</strong></h1>
+
+
+    <header>
+      <nav>
+        <ul class="icons-menu">
+          <li><a href="#"><i class="fa-solid fa-bars fa-xl"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a></li>
+        </ul>
+        <a href="#"><img src="./assets/images/hbo-white.png" alt="logo-hbo" width="150px" /></a>
+        <ul class="options-menu">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Assinar</a></li>
+        </ul>
+      </nav>
+    </header>  
+
+    <h1>Entrar</h1>
     <p>Você tem uma conta HBO Max?</p>
 
     <form>
       <p>
-        <label class="label-input">E-mail</label><br />
-        <input type="email" name="email" />
+        <label class="label-input">E-mail:</label><br />
+        <input type="email" name="email" value="" placeholder="Digite o seu e-mail" />
       </p>
       <p>
-        <label class="label-input">Senha</label><br />
-        <input type="password" name="password" /><br />
+        <label class="label-input">Senha:</label><br />
+        <input type="password" name="password" value="" placeholder="*******"/><br />
       </p>
     </form>
     <button type="submit" class="btn">Entrar</button>
 
-    <p>
-      Você acessa a HBO Max por um provedor de TV,<br />
-      de internet ou celular?
+    <p class="text-center">
+      Você acessa a HBO Max por um provedor<br />
+      de TV, de internet ou celular?
     </p>
     <button class="btn-provider">Entrar como provedor</button>
   </body>
